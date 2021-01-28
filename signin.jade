@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    h1= title
+    label(for="userId") id  
+    input(type="text", name="userId",id="userId")
+    label(for="userPass") pass  
+    input(type="password", name="userPass",id="userPass")
+    input(type="submit", value="注册" id="signin")
+    a(href="/users/login") login
+    p 
+    script(src="/javascripts/signin.js")
